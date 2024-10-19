@@ -1,22 +1,13 @@
-const randomNum = Math.random();
-
-let randomString;
-
-switch (true) {
-    case (randomNum < 0.2):
-        randomString = "Hello";
-        break;
-    case (randomNum < 0.4):
-        randomString = "Goodbye";
-        break;
-    case (randomNum < 0.6):
-        randomString = "Welcome";
-        break;
-    case (randomNum < 0.8):
-        randomString = "Firewell";
-        break;
-    default:
-        randomString = "Hi";
+// Function to get the computer's choice
+function getComputerChoice() {
+    const random = Math.floor(Math.random() * 3);
+    if (random === 0) {
+        return "rock";
+    } else if (random === 1) {
+        return "paper";
+    } else {
+        return "scissors";
+    }
 }
 
-console.log(randomString)
+console.log(getComputerChoice());
