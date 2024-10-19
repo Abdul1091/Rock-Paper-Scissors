@@ -11,3 +11,13 @@ function getComputerChoice() {
 }
 
 console.log(getComputerChoice());
+
+// function to get the human's choice
+function getHumanChoice() {
+    let choice = prompt("Choose rock, paper, or scissors:").toLowerCase();
+    while (choice !== "rock" && choice !== "paper" && choice !== "scissors") {
+    }
+    return choice;
+}
+
+console.log(getHumanChoice());
